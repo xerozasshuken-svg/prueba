@@ -1,4 +1,8 @@
+import 'dart:io';
 void main(List<String> args) {
-  int a = 2;
-  print(a);
+
+  print("\ningresa un numero");
+  String? nstrg = stdin.readLineSync();
+  int n = int.parse(nstrg!);
+  print("tu numero es: $n");
 }
